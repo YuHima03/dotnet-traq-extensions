@@ -24,9 +24,8 @@
                 {
                     Scheme = defaultScheme switch
                     {
-                        "" => string.Intern("http"),
-                        "http" => string.Intern("http"),
-                        "https" => string.Intern("https"),
+                        "" or "http" => Uri.UriSchemeHttp,
+                        "https" => Uri.UriSchemeHttps,
                         _ => defaultScheme.ToString(),
                     }
                 };
