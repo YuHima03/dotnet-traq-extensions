@@ -164,7 +164,7 @@
                     prevCharKind = 1;
                     escaping = true;
                 }
-                else if (c == ':')
+                else if (c is ':' or '!')
                 {
                     charsUsedToParse = i;
                     return new(s[..i]);
