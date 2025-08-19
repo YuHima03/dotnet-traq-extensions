@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Traq" Version="0.1.0" />
+    <PackageReference Include="Traq" Version="1.0.0-alpha.1" />
   </ItemGroup>
 
 </Project>
