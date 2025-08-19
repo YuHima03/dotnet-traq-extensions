@@ -8,6 +8,13 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Include="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
   <!-- Basic information -->
   <PropertyGroup>
     <Title>Traq.Extensions.Messages</Title>
@@ -28,40 +35,7 @@
     <PackageId>Traq.Extensions.Messages</PackageId>
     <NeutralLanguage>ja</NeutralLanguage>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
-    <PackageTags>traq</PackageTags>
-    <PackageProjectUrl>https://github.com/YuHima03/dotnet-traq-extensions</PackageProjectUrl>
-    <PackageReleaseNotes>
-      Release v1.0.0.
-    </PackageReleaseNotes>
-  </PropertyGroup>
-
-  <!-- Settings fot AOT -->
-  <PropertyGroup>
-    <IsAotCompatible>true</IsAotCompatible>
-    <JsonSerializerIsReflectionEnabledByDefault>false</JsonSerializerIsReflectionEnabledByDefault>
-  </PropertyGroup>
-
-  <!-- Basic information -->
-  <PropertyGroup>
-    <Title>Traq.Extensions.Messages</Title>
-    <Authors>Yusuke Toyoda</Authors>
-    <Description>Provides extensions for handling messages of the traQ service.</Description>
-    <Copyright>No Copyright</Copyright>
-  </PropertyGroup>
-
-  <!-- Version -->
-  <PropertyGroup>
-    <Version>1.0.0</Version>
-    <AssemblyVersion>1.0.0</AssemblyVersion>
-    <FileVersion>1.0.0.0</FileVersion>
-  </PropertyGroup>
-
-  <!-- NuGet package -->
-  <PropertyGroup>
-    <PackageId>Traq.Extensions</PackageId>
-    <NeutralLanguage>ja</NeutralLanguage>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
     <PackageTags>traq</PackageTags>
     <PackageProjectUrl>https://github.com/YuHima03/dotnet-traq-extensions</PackageProjectUrl>
