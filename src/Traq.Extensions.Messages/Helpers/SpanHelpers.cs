@@ -15,7 +15,7 @@ namespace Traq.Extensions.Messages.Helpers
             {
                 return span1;
             }
-            else if (Unsafe.ByteOffset(ref MemoryMarshal.GetReference(span1), ref MemoryMarshal.GetReference(span2)) != span1.Length * Unsafe.SizeOf<char>())
+            else if (Unsafe.ByteOffset(ref MemoryMarshal.GetReference(span1), ref MemoryMarshal.GetReference(span2)) != span1.Length * Unsafe.SizeOf<T>())
             {
                 throw new ArgumentException($"The given spans are not contiguous.");
             }
@@ -64,6 +64,7 @@ namespace Traq.Extensions.Messages.Helpers
             if (c5 == 0)
             {
                 propertyName = value = default;
+                return 0;
             }
 
             // ____ "propName" ____ : ____ "value"

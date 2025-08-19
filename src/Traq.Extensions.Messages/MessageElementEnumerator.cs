@@ -20,7 +20,7 @@ namespace Traq.Extensions.Messages
 
         public readonly MessageElement Current => _current;
 
-        readonly object? IEnumerator.Current => throw new NotSupportedException();
+        readonly object? IEnumerator.Current => throw new NotSupportedException("Use the strongly-typed Current property instead.");
 
         public void Dispose()
         {
@@ -101,7 +101,7 @@ namespace Traq.Extensions.Messages
 
             public readonly MessageElement Current => _current;
 
-            readonly object? IEnumerator.Current => throw new NotSupportedException();
+            readonly object? IEnumerator.Current => throw new NotSupportedException("Use the strongly-typed Current property instead.");
 
             public readonly ReadOnlySpan<char> Source => _source;
 
